@@ -28,21 +28,12 @@ break;default:a.parent.rstv_store.main["rstv_breakpoints_"+m]=o,a.parent.rstv_st
   
   <script type="text/javascript">
   $(document).ready(function () {
-    $.restive.startMulti();
-
-    /*$('body').restive({
-        breakpoints: ['1800'],
-        classes: ['xs'],     
-        formfactor: 'phone',
-        force_dip : true
-    });*/
-
-    $('body').restive({
-        breakpoints: ['240', '360', '480', '640', '960', '1280'], 
-        classes: ['240-ct', '360-ct', '480-ct', '640-ct', '960-ct', '1280-ct']
+   
+   $('body').restive({
+          breakpoints: ['10000'],
+          classes: ['nb'],
+          turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet,is_landscape=landscape'
     });
-
-    $.restive.endMulti();
 
 setTimeout(function(){$("#classes").html($('body').attr('class'));},2000);
 
